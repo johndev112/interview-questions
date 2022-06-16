@@ -1,0 +1,77 @@
+/*
+QUESTION 1c
+Create an object named "example" with a key "sentence" that has a value of the string "TODAY IS AN AWESOME DAY FOR CODING!"
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/*
+QUESTION 2c
+Create a function "fixTitle" that take an argument (a string). Your job is to have the function
+return the string in title case/style, meaning that each word is capitalized (all other letters in the word are lowercase).
+Assume passive words like "the", "and", "to" are also going to be capitazlized.
+
+example:
+input: "THE HiSTory of mathematiCS"
+output: "The History Of Mathematics"
+
+Test your fixTile function by passing in the sentence value of your "example" object.
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/*
+QUESTION 3c
+The bookstore has a list of books but they are not titled correctly since the book titles should be in title case/style.
+
+const books = [
+ {title: "the midnight sky", author: "Samuel Goodens"},
+ {title: "technology In THE age of artificial intelligenge", author: "Lara Del Rio"},
+ {title: "never GIVE up", author: "Michelle Li"} 
+];
+
+Write a function that uses your "fixTitle" function to fix each title and return an array of strings where each entry is the fixed title.
+
+example output: ["The Midnight Sky", "Technology In The Age Of Artificial Intelligenge", "Never Give Up" ]
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/*
+QUESTION 4c
+Create a function "checklist" that will take an array as argument (an array of food items). "checklist" should return a function "purchased" that
+also takes an array of food items as an argument. If all items did not get purchased, return "{allPurchased: false, missing: [<missing items>]}".
+If all food items were purchashed, {allPurchased: true, missing: []}
+
+Example:
+const func = checklist(["apple", "rice", "wine"])
+func(["mango", "bread", "lettuce", "apple"]) // expected: {allPurchased: false, missing: ["rice", "wine"]}
+func(["rice", "bread", "wine", "lettuce", "apple"]) // expected: {allPurchased: true, missing: []}
+
+*/
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+/*
+QUESTION 5c
+Write a function "percentMissing" to return the percentage of times a letter character is missing in a phrase. A missing character is
+shown with an underscore "_". Examples:
+percentMissing("Co_i_ng i_ f_n") should return 28.5
+percentMissing("J___s_ript") should return 40 or 40.0
+
+Note: Do not use any native JS methods, or loops.
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/*
+Question 6c
+Write a function that provided n (a number) as input, will return a string representing a chessboard of n x n squares.
+
+_#_#
+#_#_
+_#_#
+#_#_
+*/
+
