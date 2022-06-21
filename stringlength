@@ -1,0 +1,6 @@
+/*
+QUESTION 9a
+Write a function "getLength" that returns the length of a string. Accomplish this without using any loops,
+native JS methods, or the length property.
+*/
+
