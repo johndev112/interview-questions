@@ -1,0 +1,43 @@
+/*
+QUESTION 2a
+Create a function 'addNumbers' that takes a number as an argument. 'addNumbers' should add up all the
+numbers from 1 to the number you passed to the function.
+For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+Check that your 'addNumbers' function is working correctly by passing your variable 'number' to the
+'addNumbers' function
+
+Soltutions 
+
+
+1. For loop 
+
+function addNumbers (num) { 
+let sum = 0
+  //using a for loop
+  for (let i = 1; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
+}
+  
+console.log(addNumbers(4))
+
+
+The solution using recursion:
+
+function addNumbers (num) {
+  if (num <= 1) {
+    return num;
+  }
+    
+    return num + addNumbers(num - 1)
+  
+}
+
+
+//math solution
+function addNumbers (num) {
+   return num * (num + 1) / 2;
+}
+
+  
