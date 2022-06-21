@@ -1,0 +1,6 @@
+QUESTION 7a
+Define a function "isPalindrome" that takes a string, and returns a boolean value indicating whether the
+string is a palindrome
+(a palindrome is any string that has the same value when reversed - for example, "LEVEL" or "RACECAR")
+*/
+
