@@ -4,3 +4,27 @@ Write a function "getLength" that returns the length of a string. Accomplish thi
 native JS methods, or the length property.
 */
 
+
+
+
+function strLength(s) {
+  var length = 0;
+  while (s[length] !== undefined)
+    length++;
+  return length;
+}
+
+console.log(strLength("Hello")); // 5
+console.log(strLength("")); // 0
+
+
+
+Using Reduce!
+
+function getLength (str) {
+
+console.log([...str].reduce(a => a+1, 0)); 
+}
+
+ const str = "Hello!";
+getLength(str)
