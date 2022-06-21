@@ -27,6 +27,8 @@ function palindrome(str) {
   // str.toLowerCase() = "A man, a plan, a canal. Panama".toLowerCase() = "a man, a plan, a canal. panama"
   // str.replace(/[\W_]/g, '') = "a man, a plan, a canal. panama".replace(/[\W_]/g, '') = "amanaplanacanalpanama"
   // var lowRegStr = "amanaplanacanalpanama";
+  
+ 
      
   // Step 2. Use the same chaining methods with built-in functions from the previous article 'Three Ways to Reverse a String in JavaScript'
   var reverseStr = lowRegStr.split('').reverse().join(''); 
@@ -41,3 +43,14 @@ function palindrome(str) {
 }
  
 palindrome("A man, a plan, a canal. Panama");
+
+
+
+methods used 
+
+
+The toLowerCase() method to return the calling string value converted to lowercase.
+The replace() method to return a new string with some or all matches of a pattern replaced by a replacement. We will use one of the RegExp we just created earlier.
+The split() method splits a String object into an array of strings by separating the string into sub strings.
+The reverse() method reverses an array in place. The first array element becomes the last and the last becomes the first.
+The join() method joins all elements of an array into a string.
