@@ -11,12 +11,8 @@ Using Filter
 function countTimes(arr, value) {
  let count = 0
  
-arr.filter(element => {
-  if (element === value) {
-    count += 1;
-  }
-});
-  return count
+count = arr.filter(num => num == value).length;
+return count
 }
 
 console.log(countTimes([1, 8, 9, 9, 10], 9)) 
