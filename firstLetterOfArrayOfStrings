@@ -5,3 +5,21 @@ names, sorted in alphabetical order. Create a function ‘societyName’ that ta
 returns the name of the secret society. For example, if our input is [‘Adam’, ‘Sarah’, ‘Malcolm’] then
 ‘societyName’ should return the string ‘AMS’
 */
+
+
+
+//using REDUCE
+
+//input array of names
+//output first letter of each name in a string
+function society (arr) {
+  let output = arr.reduce((acc,curr) => {
+    return acc += curr[0]
+  }, '')
+  return output
+
+}
+
+
+let names = ['adam', 'pog','dog']
+console.log(society(names))
