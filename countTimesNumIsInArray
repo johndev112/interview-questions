@@ -1,0 +1,6 @@
+/*
+QUESTION 3b
+Create a function “countTimes” that takes in two arguments (an array and a search value). “countTimes”
+should return the number of times the search value is present in the array.
+Example: countTimes([1, 8, 9, 9, 10], 9) -> 2
+*/
