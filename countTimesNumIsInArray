@@ -52,3 +52,13 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(countTimes([1, 8, 9, 9, 10], 9)) 
+
+
+
+Using Reduce
+const occurrencesOf = (number,numbers) => numbers.reduce((counter, currentNumber)=> (number === currentNumber ? counter+1 : counter),0);
+
+  
+
+
+console.log(occurrencesOf(9 ,[1, 8, 9, 9, 10])) 
