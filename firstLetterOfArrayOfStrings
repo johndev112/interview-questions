@@ -20,6 +20,16 @@ function society (arr) {
 
 }
 
+//USING MAP
+
+function society (arr) {
+  let output = arr.map((word) => word[0]).join('')
+  
+  
+  return output
+}
+// animals.map((animal) => animal[0]).join('')
+    
 
 let names = ['adam', 'pog','dog']
 console.log(society(names))
