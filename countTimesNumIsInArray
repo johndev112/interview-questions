@@ -37,3 +37,22 @@ arr.forEach(element => {
 }
 
 console.log(countTimes([1, 8, 9, 9, 10], 9)) 
+
+
+
+// using for loop
+
+function countTimes(arr, value) {
+ let count = 0
+ 
+for (let i = 0; i < arr.length; i++) {
+  if (value === arr[i]) {
+    count++
+  }
+}
+ 
+ 
+  return count
+}
+
+console.log(countTimes([1, 8, 9, 9, 10], 9)) 
