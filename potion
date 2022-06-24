@@ -1,0 +1,113 @@
+// Declare a variable 'number' and set it to the value 10.
+
+let number = 10
+
+/*
+Create a function 'addNumbers' that takes a number as an argument. 'addNumbers' should add up all the numbers from 1 to the number you passed to the function.
+For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+*/
+
+//input number
+//output; every number up to input num 
+
+function addNumbers(num) {
+ if (num === 1 ) {
+   return 1
+   }
+  
+  return num + addNumbers(num - 1)
+  
+}
+//   let sum = 0
+//   for (let i = 1; i <= num; i++) {
+//    return sum += i 
+//   }
+//   return sum
+// }
+
+
+  
+  
+// console.log(addNumbers(4))
+
+/*
+Define a function "isPalindrome" that takes a string, and returns a boolean value indicating whether the string is a palindrome
+(a palindrome is any string that has the same value when reversed - for example, "LEVEL" or "RACECAR")
+*/
+
+//input_ string
+//output - boolean, true or false for if str in a palindrome
+
+function isPalindrome (str) {
+  
+let revStr = str.split('').reverse('').join('')
+// console.log(revStr)
+
+if (revStr === str) {
+  return true
+} else {
+  return false 
+}
+  
+  
+}
+
+// console.log(isPalindrome('helllloooo'))
+// console.log(isPalindrome('level'))
+
+// Create a function "addOne" that takes a number as and argument and returns that number plus one
+
+function addOne (num) {
+  return num + 1
+}
+
+// console.log(addOne(3))
+
+// Create a function "subtractOne" that takes a number as and argument and returns that number minus one
+
+
+function subtractOne (num) {
+  return num - 1
+}
+
+// console.log(subtractOne(3))
+
+/*
+There are two types of potions:
+Growing potion: "A"
+Shrinking potion: "B"
+If "A" immediately follows a digit, add 1 to the digit using your "addOne" function
+If "B" immediately follows a digit, subtract 1 from the digit using your subtractOne function
+Create a function "usePotions" that returns a string according to these rules, removing the potions once they've been consumed.
+Example:
+usePotions("3A78B51") ➞ "47751"
+  3 grows to 4, 8 shrinks to 7
+usePotions("9999B") ➞ "9998"
+usePotions("9A123") ➞ "10123"
+usePotions("567") ➞ "567"
+*/
+
+//input a string 
+//output - string that is effected by the callback functions 
+
+//trying to only affect string index before a 
+
+function usePotions (str) {
+  let newStr = ''
+  
+  for (let i = 0 ; i < str.length; i++) {
+    if (str[i + 1] === 'A') {
+      
+      newStr += (addOne(Number(str[i])))
+      i++
+      continue
+      
+    } else if (str[i + 1] === 'B') {
+		newStr += (subtractOne(Number(str[i])))
+        i++
+      continue
+
+    }
+    newStr += (str[i])
+  }
+ return newStr 
