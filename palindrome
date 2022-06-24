@@ -74,3 +74,30 @@ let lowRegStr = str.toLowerCase().replace(re, '');
   return false
 
 }
+
+
+
+Kyle simpson way
+
+function palindrome(str) {
+  let re = /[^A-Za-z0-9]/g;
+ str = str.toLowerCase().replace(re, '');
+  
+console.log(str)
+  
+ if (str.length <= 1) { 
+ return true}
+  
+  let first = str[0]
+  let last = str[str.length - 1]
+  
+  if (first === last) {
+    return palindrome(str.substring(1,str.length-1)) 
+    
+  }
+  return false 
+}
+
+console.log(palindrome("Anne, I vote more cars race Rome-to-Vienna")); //-> true
+console.log(palindrome("llama mall")); //-> true
+console.log(palindrome("jmoney")); //-
