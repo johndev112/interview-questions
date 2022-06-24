@@ -54,3 +54,23 @@ The replace() method to return a new string with some or all matches of a patter
 The split() method splits a String object into an array of strings by separating the string into sub strings.
 The reverse() method reverses an array in place. The first array element becomes the last and the last becomes the first.
 The join() method joins all elements of an array into a string.
+
+
+
+
+
+
+
+function palindrome(str) {
+  let re = /[^A-Za-z0-9]/g;
+let lowRegStr = str.toLowerCase().replace(re, '');
+  // console.log(lowRegStr)
+  
+  let revStr = lowRegStr.split('').reverse('').join('')
+  // console.log(revStr)
+  
+  if (revStr === lowRegStr) { return true}
+  
+  return false
+
+}
