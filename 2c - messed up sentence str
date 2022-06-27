@@ -1,0 +1,12 @@
+/*
+
+QUESTION 2c
+Create a function "fixTitle" that take an argument (a string). Your job is to have the function
+return the string in title case/style, meaning that each word is capitalized (all other letters in the word are
+lowercase).
+Assume passive words like "the", "and", "to" are also going to be capitazlized.
+example:
+input: "THE HiSTory of mathematiCS"
+output: "The History Of Mathematics"
+Test your fixTile function by passing in the sentence value of your "example" object.
+*/
