@@ -14,3 +14,16 @@ AWESOME DAY FOR CODING!`
 }
 
 console.log(example)
+
+
+
+Other ways to add prop to Obj
+
+let example = {}
+
+example.sentence = `TODAY IS AN ATODAY IS AN
+AWESOME DAY FOR CODING!`
+
+
+example["sentence"] = `TODAY IS AN ATODAY IS AN
+AWESOME DAY FOR CODING!`
