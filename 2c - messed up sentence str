@@ -10,3 +10,25 @@ input: "THE HiSTory of mathematiCS"
 output: "The History Of Mathematics"
 Test your fixTile function by passing in the sentence value of your "example" object.
 */
+
+
+//input string 
+//return string in title style (each word capitlized)
+
+function fixTitle (str) 
+//.split to change into an array
+//map to return a new array
+//ele[0].toUpperCase to change each element in the array to upper case
+// + ele.slice(1) to change each char in the array beside the first char to lower case
+//..join to change back int a string 
+  let output = str.split(' ').map((ele) => {
+    return ele[0].toUpperCase() + ele.slice(1).toLowerCase()
+  }).join(' ')
+  
+  
+  return output
+}
+
+
+
+console.log(fixTitle(example.sentence))
