@@ -5,3 +5,12 @@ AWESOME DAY FOR CODING!"
 
 */
 
+let example = {
+  
+  sentence: `TODAY IS AN ATODAY IS AN
+AWESOME DAY FOR CODING!`
+
+  
+}
+
+console.log(example)
