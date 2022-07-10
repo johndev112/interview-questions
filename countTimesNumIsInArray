@@ -6,6 +6,26 @@ Example: countTimes([1, 8, 9, 9, 10], 9) -> 2
 */
 
 
+
+MY Fav using reduce
+
+function countTimes(arr,val) {
+  //reduce to count num of times 
+  //use 
+  const output = arr.reduce((acc, num) => {
+    if (num === val) {
+      acc++
+    }
+    return acc
+  }, 0)
+  return output
+}
+
+console.log(countTimes([1, 8, 9, 9, 9], 9))
+
+
+
+
 Using Filter 
 
 function countTimes(arr, value) {
