@@ -8,3 +8,25 @@
 //if it does then increase 
 
 //loop though the valies of the object and see which one has the higest value 
+
+
+const maxChar = (str) => {
+  let obj = {}
+  
+  for (let char of str) {
+    (!obj[char])?obj[char]=1:obj[char]++
+  }
+  // console.log(obj)
+  let maxNum = 0
+  let maxChar = ''
+  
+  for (let char in obj) {
+    if (obj[char] >= maxNum) {
+      maxNum = obj[char]
+      maxChar = char
+    }
+  }
+  return console.log(`${maxChar} appears ${maxNum} times`)
+}
+
+console.log(maxChar('hhhhheeslkakld'))
