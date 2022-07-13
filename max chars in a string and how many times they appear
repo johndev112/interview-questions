@@ -1,0 +1,10 @@
+// Find max Chars in a string 
+
+
+// Generate key valie pairs 
+
+//create an object 
+//if char of string does not exist in obj then set valile to 1 
+//if it does then increase 
+
+//loop though the valies of the object and see which one has the higest value 
