@@ -6,3 +6,18 @@
 //reverse method
 //back to string
 //back to int 
+
+
+const reverseInt = (num) => {
+  let strNum = num
+    .toString()
+    .split('')
+  	.reverse()
+  	.join('')
+  
+  let output = Number(strNum)
+  
+  return output
+}
+
+console.log(reverseInt(124))
