@@ -11,3 +11,14 @@ findTheDuplicate([2,1,3,4]) // undefined
 
 Using index Of 
 
+
+function findTheDuplicate(arr) {
+  // let dup = undefined
+  // arr.sort()
+  
+const duplicates = arr.filter((ele, index) => index !== arr.indexOf(ele));
+ 
+  
+  return duplicates.toString()
+}
+  
