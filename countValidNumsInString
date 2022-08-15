@@ -1,0 +1,13 @@
+// countValidNumsInString
+// Write a function called countValidNumsInString which counts the number of valid numbers in a string.
+
+// Examples:
+
+
+console.log(countValidNumsInString("")) // 0
+countValidNumsInString("1") // 1
+console.log(countValidNumsInString("12")) // 2
+countValidNumsInString("12abc3") // 3
+console.log(countValidNumsInString("1s2d3dsadas4")) // 4
+countValidNumsInString("512,3,4!?!") // 5
+countValidNumsInString("123456") // 6
