@@ -4,3 +4,32 @@ Write a function called pluck, which takes an array of objects and the name of a
 The function should return an array containing the value associated with that key for each object, or undefined if that key is not present in the object.
 
 Examples:
+
+
+
+input: array of objs, name of key
+output: array containing value of key passed in 
+
+loop though the array using reduce 
+/filter obj keys that equal 
+loop though oject
+
+function pluck (arr,keyval) {
+  return arr.reduce((acc,curr) => {
+
+    for (let key in curr) {
+      if (key === keyval) {
+            acc.push(curr[key])
+
+      }
+	  }
+    return acc
+  
+  }, [])
+}
+
+console.log(pluck([
+  { name: "Tim" }, { name: "Matt" }, { name: "Elie" }],
+ 'name'
+))
+// ["Tim", "Matt", "Elie"]
