@@ -6,3 +6,18 @@ The function should return the first n multiples of the number x.
 Assume that x is a positive integer.
 
 Examples:
+console.log(multiples(3, 4)) // [3, 6, 9, 12]
+console.log(multiples(2, 5)) // [2, 4, 6, 8, 10]
+
+function multiples (x,n) {
+  //return num n amount of multiples of number x 
+  let output = []
+  
+  for (let i = 1; i <= n; i++) {
+    output.push(x * i)
+  }
+  return output
+}
+
+console.log(multiples(3, 4)) // [3, 6, 9, 12]
+console.log(multiples(2, 5)) // [2, 4, 6, 8, 10]
