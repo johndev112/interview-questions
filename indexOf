@@ -6,3 +6,23 @@ The function should return the first index at which the value exists or -1 if th
 Do not use the built in Array.indexOf() function!
 
 Examples:
+
+
+function indexOf (arr, num) {
+  return arr.reduce((acc,curr,index) => {
+    if (curr === num) {
+      return index
+    }
+    return acc
+  },-1)
+}
+
+
+let arr = [5, 10, 15, 20];
+console.log(indexOf(arr, 20)); // 3
+
+let arr2 = [1, 2, 3, 4, 5];
+console.log(indexOf(arr2, 2)); // 1
+
+let arr3 = [1, 2];
+console.log(indexOf(arr3, 10)); // -1
