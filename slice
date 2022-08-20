@@ -8,3 +8,25 @@ If a third parameter is not passed to the function, it should slice until the en
 If the third parameter is greater than the length of the array, it should slice until the end of the array.
 
 Do not use the built in Array.slice() function!
+
+
+
+function slice (arr, start, end) {
+
+  let output = []
+  
+  if (end > arr.length) {
+    end = arr.length
+  }
+  
+  for (let i = start; i < end ; i++) {
+    output.push(arr[i])
+  }
+  return output
+}
+
+
+console.log(slice([1, 2, 3, 4, 5], 0, 2)); // [1, 2]
+slice([1, 2, 3, 4, 5], 2, 4); // [3, 4]
+slice([1, 2, 3, 4, 5], 2); // [3, 4, 5]
+console.log(slice([1, 2, 3, 4, 5], 2, 10)); // [3, 4, 5]
