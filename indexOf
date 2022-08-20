@@ -1,0 +1,8 @@
+indexOf
+Write a function called indexOf, which accepts an array and a number.
+
+The function should return the first index at which the value exists or -1 if the value is not found.
+
+Do not use the built in Array.indexOf() function!
+
+Examples:
