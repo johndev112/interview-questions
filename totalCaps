@@ -6,3 +6,22 @@
 console.log(totalCaps(["AwesomE", "ThIngs", "hAppEning", "HerE"])) // 8
 totalCaps(["Elie", "Matt", "Tim"]) // 3
 totalCaps(["hello", "world"]) // 0
+
+
+
+function totalCaps (arr) {
+  
+const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];  
+  
+  return arr.reduce((acc,curr,index) => {
+    
+
+    for (let i = 0; i < curr.length; i++) {
+      if (alphabet.includes(curr[i])) {
+        acc++
+      }
+    }
+    return acc
+    
+  }, 0)
+}
