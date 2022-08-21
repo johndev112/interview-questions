@@ -8,3 +8,39 @@
 // You can assume that the array will always at least three elements, and that there'll always be at least one dog, one cat, and one water to work with.
 
 // Examples:
+
+
+
+//use filter to create 2 seperate arrays
+//concat them together
+function separate (arr) {
+  return [].concat(arr.filter((ele) => ele === 'cat'))
+  .concat(arr.filter(ele => ele === 'water'))
+  .concat(arr.filter(ele => ele === 'dog'))
+
+}
+  
+  
+
+console.log(separate(['dog','cat','water'])) // ['cat','water','dog']
+
+separate(['dog','cat','water','cat']) // ['cat', 'cat', 'water', 'dog'])
+
+separate(['cat','cat','water','dog','water','cat','water','dog'])
+
+// ['cat','cat','cat','water','water','water','dog','dog']
+
+console.log(separate(['cat','cat','cat','cat','cat',
+    'cat','cat','cat','cat','cat','cat',
+    'cat','cat','cat','cat','cat','cat','cat',
+    'dog','water','water','water','water','water',
+    'water','water','water','water','water','water',
+    'water','water','water']))
+
+ /* ['cat','cat','cat','cat','cat',
+    'cat','cat','cat','cat','cat','cat',
+    'cat','cat','cat','cat','cat','cat','cat',
+    'water','water','water','water','water',
+    'water','water','water','water','water','water',
+    'water','water','water', 'dog']
+*/
