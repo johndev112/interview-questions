@@ -1,0 +1,4 @@
+// // removeVowels
+// // Write a function called removeVowels which will accept a string and return a new string with all the vowels removed. You should not consider "y" to be a vowel.
+
+// Examples:
