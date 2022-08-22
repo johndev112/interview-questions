@@ -12,3 +12,49 @@ divideObject({
   sixth: 10,
 })
 // [ [12], [13] ]
+
+
+//create a function 
+    //input obj 
+        //keys 
+        //values - either strings or numbers   
+    //output: array of arrays containing total of all numbers and total of all string chars 
+
+    
+
+divideObject({
+  first: "hi",
+  second: "hello",
+  third: "hey",
+  fourth: 2,
+  fifth: "fun",
+  sixth: 10,
+})
+[ [12], [13] ]
+
+//vars of str and num
+// create if statement with type of  
+
+
+//if nums in string 
+
+
+function divideObject (obj) {
+
+    let nums = 0
+    let str = 0
+    
+    for (let key in obj) {
+        if (typeof obj[key] === 'string') {
+str += obj[key].length
+        }
+
+        if (typeof obj[key] === 'number') {
+            nums += obj[key]
+        }
+    }
+
+    
+
+    return [[nums], [str]]
+
