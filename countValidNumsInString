@@ -11,3 +11,21 @@ countValidNumsInString("12abc3") // 3
 console.log(countValidNumsInString("1s2d3dsadas4")) // 4
 countValidNumsInString("512,3,4!?!") // 5
 countValidNumsInString("123456") // 6
+
+
+countValidNumsInString
+
+
+//count valid numbers in a string 
+//use regeext test to see if it is a digit 
+
+function countValidNumsInString (str) {
+    let count = 0
+    let regex = /[^\d]/g
+
+//replace all nondigits with empty string then reteust length
+    return str.replace(regex, "").length
+}
+
+
+console.log(countValidNumsInString('43892489fsdkj'));
