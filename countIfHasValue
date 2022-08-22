@@ -1,15 +1,39 @@
 countIfHasValue
 Write a function called countIfHasValue which accepts an object where all of the values are arrays. It also accepts a numeric value that is being searched for. The function should return the number of arrays in which the searched-for value appears.
 
-Examples:
 
-let obj = {
+
+Solution 
+
+//create a function 
+    //input: obj where all values are arrays, num to search for 
+    //ouput: number of arrays where value is found 
+
+    //example output 
+
+    let obj = {
   a: [1, 10, 3],
   b: [4, 1, 7],
   c: [7, 7, 7],
   d: [10, 7, 12]
 };
-countIfHasValue(obj, 1) // 2
-countIfHasValue(obj, 7) // 3
-countIfHasValue(obj, 10) // 2
-countIfHasValue(obj, 13) // 0
+
+console.log(countIfHasValue(obj, 1)) // 2
+console.log(countIfHasValue(obj, 7)) // 3
+console.log(countIfHasValue(obj, 13)) // 0
+
+
+//count var 
+//loop though obj using for in 
+//use .includes on earch value 
+//if true count++
+
+function countIfHasValue (obj, num) {
+    let count = 0
+    for (let key in obj) {
+        if (obj[key].includes(num)) {
+            count++
+        }
+    }
+    return count
+}
