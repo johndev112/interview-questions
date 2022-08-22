@@ -27,4 +27,23 @@ collectOddsAndEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
 collectOddsAndEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
 // { odd: 8, even: 8 });
 
+//create a func 
+    //input: array of possitive its 
+    //output is an object with count of odd and evens nums 
 
+    //create an object with keys odd and even
+    //loop though the array using filter twice 
+    //set even to filter lengs
+
+    function collectOddsAndEvens(arr) {
+      let output = {
+        even: 0,
+        odd: 0,
+      };
+      output['even'] = arr.filter((ele) => ele % 2 === 0).length;
+      output['odd'] = arr.filter((ele) => ele % 2 !== 0).length;
+
+      return output;
+    }
+
+console.log(collectOddsAndEvens([1, 2, 3, 4, 5, 6, 7, 8, 9]));
