@@ -1,0 +1,28 @@
+Challenge 14
+Create a function countBy that accepts an array and a callback, and returns an object. countBy will iterate through the array and perform the callback on each element. Each return value from the callback will be saved as a key on the object. The value associated with each key will be the number of times that particular return value was returned.
+
+
+/ Challenge 14
+//input: array, callback()
+//output: obj
+	//keys: return value from callback 
+	//value: num of times that value was returned 
+function countBy(array, callback) {
+  
+  
+  return array.reduce((obj,curr) => {
+    
+    if (callback(curr) in obj === false) {
+      obj[callback(curr)] = 1
+    } else {
+      obj[callback(curr)]++
+    }
+    
+    return obj
+    
+  },{})
+  
+  //iterate though the array
+  //perform a callback on each item
+  //
+  
